@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">  
+    <!-- TODO: Replace this with your title -->
+    <title>Allison's Portfolio</title>
+    <link rel="shortcut icon" href="assets/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- 
+			TODO: Add Bootstrap CSS link tag from: 
+    	https://getbootstrap.com/docs/5.1/getting-started/introduction 
+		-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- 
+			TODO: Add Bootstrap Icons link tag from: 
+			https://icons.getbootstrap.com/
+			(Remember, the CDN link is towards the bottom of the page!)
+		-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- Custom styles (these can extend the default Bootstrap styles) -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body class="scroll-top"
+        data-bs-spy="scroll"
+        data-bs-target=".navbar"
+        data-bs-offset="100">
+    <header>
+    <!-- TODO: Paste Navbar code and customize links -->  
+      <nav class="navbar navbar-light fixed-top navbar-expand-md">
+        <div class="container">
+          <a href="#hero-section" class="navbar-brand">
+            <i class="bi bi-person-heart"></i>
+          </a>
+        </div>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-collapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="nav-collapse" class="collapse navbar-collapse">
+          <div class="navbar-nav ms-auto">
+            <a href="#mission-section" class="nav-link active">Mission</a>
+            <a href="#skills-section" class="nav-link">Skills</a>
+            <a href="#inspiration-section" class="nav-link">Inspiration</a>
+            <a href="#contact-section" class="nav-link">Contact</a>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- Hero section -->
+    	<section id="hero-section">
+        <div class="headshot text-center">
+          <img src="assets/headshot.jpg" alt="Image of Allison.">
+        </div>
+        <h1>Allison T</h1>
+        <h6>work smarter, not harder</h6>
+      </section>
+    </header>
+
+    <br>
+    
+    <main>
+    	<!-- Mission/Meet-me section -->
+      <section id="mission-section">
+        <div id="mission-target"></div>
+        <div class="container">
+          <div class="row align-items-center">
+            <h2 class="col-12">My Mission</h2>
+            <img src="assets/computer.jpg" alt="Image of hands on keyboard." class="col-md-6 col-12">
+            <p class="col-md-6 col-12">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Ipsam inventore provident accusamus eius laborum, porro ipsa
+            ea est eligendi debitis cum in eos exercitationem ad culpa
+            dicta pariatur adipisci repellendus. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Corporis omnis fugiat
+            quisquam tempore cupiditate ratione culpa? Harum et inventore
+            iure? Exercitationem sapiente natus ducimus hic, fugiat excepturi
+            quibusdam eveniet alias!</p>
+          </div>
+        </div>
+    	</section>
+    
+      <!-- Skills section -->
+      <section id="skills-section">
+        <div id="skills-target"></div>
+        <div class="container">
+          <div class="row">
+            <h2 class="col-12">Skills</h2>
+            <div class="col-lg-3 col-md-6 col-12">
+              <img src="assets/html.png" alt="HTML logo">
+              <p>Proficient in HTML and able to create
+              functional websites to suit any needs.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <img src="assets/java.png" alt="Java logo">
+              <p>Moderate in Java and able to generate
+              various programs.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <img src="assets/css.png" alt="CSS logo">
+              <p>Efficient in CSS with the ability to
+              customize any website to appeal to a vast
+              array of users while still being functional.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <img src="assets/bootstrap.png" alt="Boostrap logo">
+              <p>Able to efficiently create and customize
+              any website to a professional degree.</p>
+            </div>
+          </div>
+        </div>
+    	</section>
+        
+      <!-- Inspiration Section -->
+      <section id="inspiration-section">
+        <div id="inspiration-target"></div>
+        <div class="container">
+      		<h2 class="col-12">Inspiration</h2>
+          <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/fam-sunset.jpg" class="d-block w-100" alt="Image of people on a beach.">
+                <div class="carousel-caption d-sm-block">
+                <h5>"As long as you try your best, it is okay."</h5>
+                <p>My mom</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/chan-inspo.jpg" class="d-block w-100" alt="Image of Bang Chan.">
+              <div class="carousel-caption d-sm-block">
+                <h5>"Trust me, you’re doing good in something. Even if it’s
+                something really small, believe me there’s something that
+                you’re really good at."</h5>
+                <p>Bang Chan from Stray Kids</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/lila-moss.jpg" class="d-block w-100" alt="Image of Lila Moss.">
+              <div class="carousel-caption d-sm-block">
+                <h5>"You need to inspire yourself and not look at things that are going to put you down."</h5>
+                <p>Lila Moss</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Contact Section -->
+      <section id="contact-section">
+      <div id="contact-target"></div>
+      <div class="container">
+        <div class="row">
+          <h2 class="col-12 ">Contact</h2>
+          <i class="bi bi-linkedin col-md-4 col-12"></i>
+          <i class="bi bi-envelope col-md-4 col-12"></i>
+          <i class="bi bi-github col-md-4 col-12"></i>
+        </div>
+      </div>
+      </section>
+    </main>
+    
+  <!-- Footer section -->
+  <footer>
+    <section id="footer-section">
+      <div class="container">
+        &copy Allison T 2022
+      </div>
+    </section>
+  </footer>
+
+  <!-- 
+		TODO: Paste Bootstrap Javascript script tag from:
+		https://getbootstrap.com/docs/5.1/getting-started/introduction/
+	-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
